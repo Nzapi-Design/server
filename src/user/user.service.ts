@@ -19,7 +19,8 @@ export class UsersService {
                     firstName: data.firstName,
                     lastName: data.lastName,
                     userAddress: data.userAddress,
-                    username: data.username
+                    username: data.username,
+                    isAdmin: false
                 },
             });
         }
