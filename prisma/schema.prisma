@@ -25,6 +25,7 @@ model Image {
   createdAt DateTime  @default(now())
   url       String
   type      ImageType
+  isAdmin   Boolean
   userId    String
   user      User      @relation(fields: [userId], references: [id])
   designId  String
