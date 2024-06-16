@@ -25,7 +25,6 @@ model Image {
   createdAt DateTime  @default(now())
   url       String
   type      ImageType
-  isAdmin   Boolean
   userId    String
   user      User      @relation(fields: [userId], references: [id])
   designId  String
@@ -51,6 +50,7 @@ model User {
   firstName   String
   lastName    String
   username    String
+   isAdmin   Boolean
   updateAt    DateTime? @default(now())
   userAddress String
   design      Design[]
