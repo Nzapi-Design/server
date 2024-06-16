@@ -50,7 +50,7 @@ model User {
   firstName   String
   lastName    String
   username    String
-   isAdmin   Boolean
+  isAdmin     Boolean
   updateAt    DateTime? @default(now())
   userAddress String
   design      Design[]
